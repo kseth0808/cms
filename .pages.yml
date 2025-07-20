@@ -4,7 +4,7 @@ content:
   - name: blogSettings
     label: Blog Settings
     type: file
-    path: content/blogSettings.json
+    path: public/content/blogSettings.json
     fields:
       - { name: title, type: string, label: "Blog Title" }
       - { name: description, type: string, label: "Description" }

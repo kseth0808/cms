@@ -11,13 +11,7 @@ const Blogs = () => {
 
     useEffect(() => {
         // ✅ Detect if running locally or deployed
-        const isLocal = window.location.hostname === 'localhost';
-
-        // ✅ Use correct path
-        const jsonPath = isLocal
-            ? '/content/blogSettings.json'  // local dev path
-            : `${import.meta.env.BASE_URL}content/blogSettings.json`; // deployed path
-
+        const jsonPath = '/content/blogSettings.json';
         fetch(jsonPath)
             .then((res) => res.json())
             .then((data) => setSettings(data))
