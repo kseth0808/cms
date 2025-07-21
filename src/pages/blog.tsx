@@ -22,6 +22,7 @@ const Blogs = () => {
 
     return (
         <div style={{ padding: '2rem' }}>
+            <div>Blogs</div>
             <h1>{settings.title}</h1>
             <p>{settings.description}</p>
         </div>
